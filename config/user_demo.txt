@@ -1,54 +1,87 @@
-📺央视频道,#genre#
-CCTV-1
-CCTV-2
-CCTV-3
-CCTV-4
-CCTV-5
-CCTV-5+
-CCTV-6
-CCTV-7
-CCTV-8
-CCTV-9
-CCTV-10
-CCTV-11
-CCTV-12
-CCTV-13
-CCTV-14
-CCTV-15
-CCTV-16
-CCTV-17
+[Settings]
+#修改模板和结果文件配置：
+source_file = config/user_demo.txt
+final_file = output/user_result.txt
 
-📡卫视频道,#genre#
-广东卫视
-浙江卫视
-湖南卫视
-北京卫视
-湖北卫视
-黑龙江卫视
-安徽卫视
-重庆卫视
-东方卫视
-东南卫视
-甘肃卫视
-广西卫视
-贵州卫视
-海南卫视
-河北卫视
-河南卫视
-吉林卫视
-江苏卫视
-江西卫视
-辽宁卫视
-内蒙古卫视
-宁夏卫视
-青海卫视
-山东卫视
-山西卫视
-陕西卫视
-四川卫视
-深圳卫视
-三沙卫视
-天津卫视
-西藏卫视
-新疆卫视
-云南卫视
+# 基础功能配置
+open_driver = False
+open_epg = True
+open_empty_category = False
+open_filter_resolution = True
+open_filter_speed = True
+open_speed_test = True
+open_update = True
+open_update_time = True
+open_service = True
+
+# 源功能配置
+open_hotel = True
+open_hotel_foodie = True
+open_hotel_fofa = False
+open_local = True
+open_multicast = True
+open_multicast_foodie = True
+open_multicast_fofa = False
+open_online_search = False
+open_subscribe = True
+
+# 高级功能配置
+open_m3u_result = True
+open_rtmp = False
+open_request = False
+open_supply = True
+open_use_cache = True
+open_history = True
+open_headers = False
+open_url_info = True
+
+# 网络配置（适合Docker）
+#app_host = http://0.0.0.0
+#app_port = 8000
+#cdn_url =
+
+# 数量控制配置
+hotel_num = 15
+local_num = 15
+multicast_num = 15
+subscribe_num = 15
+online_search_num = 0
+urls_limit = 8
+
+# 分页配置
+hotel_page_num = 2
+multicast_page_num = 2
+online_search_page_num = 1
+
+# 地区配置
+hotel_region_list = 全部
+multicast_region_list = 全部
+
+# 网络类型配置
+ipv_type = 全部
+ipv_type_prefer = ipv4
+ipv4_num =
+ipv6_num =
+ipv6_support = True
+
+# 过滤条件配置
+isp =
+location =
+min_resolution = 1280x720
+max_resolution = 1920x1080
+min_speed = 1.0
+
+# 性能优化配置
+recent_days = 15
+request_timeout = 15
+speed_test_limit = 8
+speed_test_timeout = 12
+speed_test_filter_host = True
+
+# 来源偏好配置
+origin_type_prefer = local,subscribe,hotel,multicast
+
+# 时间配置
+time_zone = Asia/Shanghai
+update_interval = 6
+update_time_position = top
